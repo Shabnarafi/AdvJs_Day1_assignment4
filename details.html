@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+</head>
+<body>
+<script>
+	
+	
+	var details = (function(){
+
+		var counter = 0;
+		//var Person = [{name:"John",age:"27",city:"NewYork"},{name:"Doe",age:"28",city:"Canada"},{name:"Samuel",age:"30",city:"NewZealand"}];
+		var Person = {name:"John",age:"27",city:"NewYork"};
+		return function()
+		{
+
+			//for(var x in Person)
+			//{
+				//alert(x);
+				counter += 1;
+			return document.write(counter +":" + "Name:"+ Person.name + "Age:" + Person.age + "City:" + Person.city);
+			//}
+		}
+
+
+	})();
+	details();
+</script>
+</body>
+</html>
